@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1061fb1e-04f9-451c-9b12-1026573fa0d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PatientController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Hospital.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Hospital.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_08_035817_create_hospitals_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_035817_create_hospitals_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HospitalController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Hospital.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Patient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_08_035817_create_hospitals_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_08_174056_create_patients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +172,16 @@
       <option name="presentableId" value="Default" />
       <updated>1607399536824</updated>
       <workItem from="1607399538360" duration="933000" />
-      <workItem from="1607400672915" duration="1832000" />
+      <workItem from="1607400672915" duration="5971000" />
     </task>
+    <task id="LOCAL-00001" summary="'table migrated'">
+      <created>1607407569669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607407569669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,5 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="'table migrated'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'table migrated'" />
   </component>
 </project>
