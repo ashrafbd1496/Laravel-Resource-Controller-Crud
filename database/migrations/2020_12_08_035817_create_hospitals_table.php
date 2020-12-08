@@ -15,6 +15,11 @@ class CreateHospitalsTable extends Migration
     {
         Schema::create('hospitals', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email') ->unique();
+            $table->string('cell')->unique();
+            $table->string('uname')->unique();
+            $table->string('photo')->nullable()->default('avatar.jpg');
             $table->timestamps();
         });
     }
