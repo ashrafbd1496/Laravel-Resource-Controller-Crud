@@ -12,8 +12,9 @@
 
 
 
-	<div class="wrap-table shadow">
-		<div class="card">
+	<div class="wrap-table ">
+        <a class="btn btn-sm btn-primary" href="{{route('patients.create')}}">Add Patient</a>
+		<div class="card shadow">
 			<div class="card-body">
 				<h2>All Data</h2>
 				<table class="table table-striped">

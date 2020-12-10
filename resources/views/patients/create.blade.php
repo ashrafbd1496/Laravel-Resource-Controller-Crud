@@ -12,8 +12,9 @@
 
 
 
-	<div class="wrap shadow">
-		<div class="card">
+	<div class="wrap ">
+        <a class="btn btn-sm btn-primary" href="{{route('patients.index')}}">All Patients</a>
+		<div class="card shadow">
 			<div class="card-body">
 				<h2>Sign Up</h2>
 				<form action="">

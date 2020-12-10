@@ -15,8 +15,8 @@
 <div class="wrap ">
     <a class="btn btn-sm btn-primary" href="#">All Data</a>
     <div class="card shadow">
-        <div class="card-body single-student">
-            <img class="shadow" src="#" alt="">
+        <div class="card-body single-patient">
+            <img class="shadow" src="{{asset('assets/media/img/avatar.jpg')}}" alt="">
             <h2>Md Ashrf Uddin</h2>
             <table class="table">
                 <tr>

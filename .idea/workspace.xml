@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1061fb1e-04f9-451c-9b12-1026573fa0d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/patients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patients/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/patients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patients/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/patients/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patients/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607399536824</updated>
       <workItem from="1607399538360" duration="933000" />
-      <workItem from="1607400672915" duration="15914000" />
+      <workItem from="1607400672915" duration="17507000" />
     </task>
     <task id="LOCAL-00001" summary="'table migrated'">
       <created>1607407569669</created>
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607574112317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="all asset files linked into all blade templates">
+      <created>1607577722706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607577722706</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
