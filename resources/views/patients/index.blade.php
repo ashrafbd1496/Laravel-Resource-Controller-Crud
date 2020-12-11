@@ -20,75 +20,32 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th>#</th>
+							<th>Id</th>
 							<th>Name</th>
 							<th>Email</th>
 							<th>Cell</th>
+							<th>Uname</th>
 							<th>Photo</th>
 							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
+
+                    @foreach($patients as $patient)
 						<tr>
 							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
+							<td>{{$patient -> name}}</td>
+							<td>{{$patient -> email}}</td>
+							<td>{{$patient -> cell}}</td>
+							<td>{{$patient -> username}}</td>
+							<td><img src="{{$patient -> photo}}" alt=""></td>
 							<td>
 								<a class="btn btn-sm btn-info" href="#">View</a>
 								<a class="btn btn-sm btn-warning" href="#">Edit</a>
 								<a class="btn btn-sm btn-danger" href="#">Delete</a>
 							</td>
 						</tr>
-						<tr>
-							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
-							<td>
-								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
-							</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
-							<td>
-								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
-							</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
-							<td>
-								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
-							</td>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
-							<td>
-								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
-							</td>
-						</tr>
+                    @endforeach
 
 
 					</tbody>

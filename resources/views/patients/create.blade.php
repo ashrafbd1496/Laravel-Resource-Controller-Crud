@@ -17,25 +17,28 @@
 		<div class="card shadow">
 			<div class="card-body">
 				<h2>Sign Up</h2>
-				<form action="">
+				<form action="{{route('patients.store')}}" method="post" enctype="multipart/form-data">
+                    @csrf
+
+
 					<div class="form-group">
 						<label for="">Name</label>
-						<input class="form-control" type="text">
+						<input name="name" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Email</label>
-						<input class="form-control" type="text">
+						<input name="email" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Cell</label>
-						<input class="form-control" type="text">
+						<input name="cell" class="form-control" type="text">
 					</div>
 					<div class="form-group">
 						<label for="">Username</label>
-						<input class="form-control" type="text">
+						<input name="uname" class="form-control" type="text">
 					</div>
 					<div class="form-group">
-						<input class="btn btn-primary" type="submit" value="Sign Up">
+						<input name="add" class="btn btn-primary" type="submit" value="Add">
 					</div>
 				</form>
 			</div>
