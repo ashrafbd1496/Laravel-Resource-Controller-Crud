@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Development Area</title>
+	<title>Update Data</title>
 	<!-- ALL CSS FILES  -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -12,29 +12,37 @@
 
 
 
-	<div class="wrap shadow">
-		<div class="card">
+	<div class="wrap ">
+		<div class="card shadow">
 			<div class="card-body">
-				<h2>Sign Up</h2>
-				<form action="">
+				<h2>Update Data</h2>
+
+				<form action="{{route('pateints.update',$edit_data ->id)}}" method="PUT" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+
 					<div class="form-group">
 						<label for="">Name</label>
-						<input class="form-control" type="text">
+						<input name="name" class="form-control" type="text" value="{{$edit_data ->name}}">
 					</div>
 					<div class="form-group">
 						<label for="">Email</label>
-						<input class="form-control" type="text">
+						<input name="email" class="form-control" type="text" value="{{$edit_data ->email}}">
 					</div>
 					<div class="form-group">
 						<label for="">Cell</label>
-						<input class="form-control" type="text">
+						<input name="cell" class="form-control" type="text" value="{{$edit_data ->cell}}">
 					</div>
 					<div class="form-group">
 						<label for="">Username</label>
-						<input class="form-control" type="text">
+						<input  name="uname" class="form-control" type="text" value="{{$edit_data ->username}}">
 					</div>
+                    <div class="form-group">
+                        <label for="">Photo</label>
+                        <input  name="photo" class="form-control" type="file" value="{{$edit_data ->photo}}">
+                    </div>
 					<div class="form-group">
-						<input class="btn btn-primary" type="submit" value="Sign Up">
+						<input name="update" class="btn btn-primary" type="submit" value="Update">
 					</div>
 				</form>
 			</div>

@@ -67,8 +67,8 @@ class PatientController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-       return view('patients.edit');
+    {   $edit_data = Patient::all($id);
+       return view('patients.edit',compact(edit_data));
     }
 
     /**
@@ -80,7 +80,15 @@ class PatientController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+       $update_data = Patient::find($id);
+       $update_data ->name = $request->name;
+       $update_data ->email = $request->email;
+       $update_data ->cell = $request->cell;
+       $update_data ->uname = $request->username;
+       $update_data ->photo = $request->photo;
+
+       $update_data ->update();
+       return redirect()->route('patients.index');
     }
 
     /**
