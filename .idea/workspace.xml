@@ -4,7 +4,6 @@
     <list default="true" id="1061fb1e-04f9-451c-9b12-1026573fa0d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PatientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PatientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/patients/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patients/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/patients/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/patients/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +169,7 @@
       <updated>1607399536824</updated>
       <workItem from="1607399538360" duration="933000" />
       <workItem from="1607400672915" duration="19805000" />
-      <workItem from="1607581738453" duration="4120000" />
+      <workItem from="1607581738453" duration="6831000" />
     </task>
     <task id="LOCAL-00001" summary="'table migrated'">
       <created>1607407569669</created>

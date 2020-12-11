@@ -46,7 +46,7 @@ class PatientController extends Controller
             'username'  =>$request->uname,
             'photo'  =>$request->photo,
         ]);
-        return redirect()->back();
+        return redirect()->route('patients.index');
     }
 
     /**
@@ -91,6 +91,8 @@ class PatientController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $delete_data = Patient::find($id);
+       $delete_data ->delete();
+       return redirect()->route('patients.index');
     }
 }

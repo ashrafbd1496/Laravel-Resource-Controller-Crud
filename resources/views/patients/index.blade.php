@@ -41,8 +41,14 @@
 							<td><img src="{{$patient -> photo}}" alt=""></td>
 							<td>
 								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
+								<a class="btn btn-sm btn-warning" href="{{route('patients.edit',$patient ->id)}}">Edit</a>
+
+                                <form style="display: inline" action="{{route('patients.destroy', $patient ->id)}}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+
 							</td>
 						</tr>
                     @endforeach
